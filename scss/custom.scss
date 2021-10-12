@@ -1,0 +1,48 @@
+// Fonts
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+// Colors
+$primary: rgb(13, 163, 173);
+$secondary: rgb(102, 102, 102);
+$dark: rgb(27, 27, 27);
+
+// import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+* {
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+}
+
+.navbar-nav {
+    a {
+        font-size: 1.2em;
+        transition: color 0.25s;
+    }
+
+    a:hover {
+        color: $primary !important;
+    }
+}
+
+#projects {
+    img {
+        border: 4px solid $secondary;
+        transition: border-color 0.25s, transform 0.25s;
+    }
+
+    img:hover {
+        border: 4px solid $primary;
+        transform: scale(102%);
+    }
+}
+
+#curriculum {
+    img {
+        max-width: 250px;
+    }
+}
