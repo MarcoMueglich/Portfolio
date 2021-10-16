@@ -48,8 +48,8 @@
         </nav>
 
         <!-- Showcase -->
-        <section class="bg-dark text-light py-4 px-3 text-center">
-            <div class="container py-5">
+        <section class="bg-dark text-light py-3 px-3 text-center" id="showcase">
+            <div class="container py-3">
                 <div class="row">
                     <div
                         class="col-md d-flex flex-column justify-content-center"
@@ -71,7 +71,7 @@
                                     img-fluid
                                     w-75
                                     rounded-circle
-                                    border border-primary border-3
+                                    border border-primary border-4
                                 "
                                 src="img/showcase.jpg"
                                 alt=""
@@ -95,38 +95,58 @@
         </section>
 
         <!-- Projects -->
-        <section class="p-4 p-md-5 bg-white" id="projects">
+        <section class="px-1 py-5 p-md-5 bg-light" id="projects">
             <div class="container">
                 <h1 class="text-center text-primary pb-2">PROJEKTE</h1>
                 <div class="row">
                     <div class="col-md">
-                        <img
-                            src="img/pomodoroClock.png"
-                            alt=""
-                            class="w-100 mb-2 rounded"
-                        />
+                        <a
+                            data-bs-toggle="modal"
+                            data-bs-target="#pomodoroModal"
+                        >
+                            <img
+                                src="img/pomodoroClock.png"
+                                alt=""
+                                class="w-100 mb-2 rounded"
+                            />
+                        </a>
                         <h3 class="text-center pb-4">Pomodoro Clock</h3>
-                        <img
-                            src="img/youHotels.png"
-                            alt=""
-                            class="w-100 mb-2 rounded"
-                        />
+                        <a
+                            data-bs-toggle="modal"
+                            data-bs-target="#youHotelsModal"
+                        >
+                            <img
+                                src="img/youHotels.png"
+                                alt=""
+                                class="w-100 mb-2 rounded"
+                            />
+                        </a>
                         <h3 class="text-center pb-4">Website - You-Hotels</h3>
                     </div>
                     <div class="col-md">
-                        <img
-                            src="img/landhausEhrengrund.png"
-                            alt=""
-                            class="w-100 mb-2 rounded"
-                        />
+                        <a
+                            data-bs-toggle="modal"
+                            data-bs-target="#landhausModal"
+                        >
+                            <img
+                                src="img/landhausEhrengrund.png"
+                                alt=""
+                                class="w-100 mb-2 rounded"
+                            />
+                        </a>
                         <h3 class="text-center pb-4">
                             Website - Landhaus Ehrengrund
                         </h3>
-                        <img
-                            src="img/placeholder.png"
-                            alt=""
-                            class="w-100 mb-2 rounded"
-                        />
+                        <a
+                            data-bs-toggle="modal"
+                            data-bs-target="#placeholderModal"
+                        >
+                            <img
+                                src="img/placeholder.png"
+                                alt=""
+                                class="w-100 mb-2 rounded"
+                            />
+                        </a>
                         <h3 class="text-center pb-4">Projekt 4</h3>
                     </div>
                 </div>
@@ -206,7 +226,7 @@
         </section>
 
         <!-- Skills -->
-        <section class="p-4 p-md-5" id="skills">
+        <section class="px-1 py-5 p-md-5 bg-light" id="skills">
             <div class="container">
                 <div class="row">
                     <h1 class="text-center text-primary pb-2">SKILLS</h1>
@@ -366,7 +386,7 @@
         </section>
 
         <!-- Curriculum -->
-        <section class="p-4 p-md-5 bg-dark" id="curriculum">
+        <section class="px-1 py-5 p-md-5 bg-dark" id="curriculum">
             <div class="container-md">
                 <h1 class="text-center text-primary">LAUFBAHN</h1>
                 <div
@@ -591,7 +611,7 @@
         </section>
 
         <!-- Contact -->
-        <section class="p-4 p-md-5" id="contact">
+        <section class="px-1 py-5 p-md-5 bg-light" id="contact">
             <div class="container">
                 <h1 class="text-center text-primary pb-2">KONTAKT</h1>
                 <form>
@@ -649,6 +669,299 @@
             </div>
         </section>
 
+        <!-- Modals -->
+        <!-- Pomodoro -->
+        <div
+            class="modal fade"
+            id="pomodoroModal"
+            tabindex="-1"
+            aria-labelledby="pomodoroModal"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content bg-dark text-light">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Pomodoro Clock
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            src="img/pomodoroClock.png"
+                            class="w-100 rounded mb-3"
+                        />
+                        <h4>Verwendete Technologien:</h4>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                        </ul>
+                        <h4>Beschreibung:</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. In consectetur molestias temporibus tempora
+                            cumque quas veniam nam magnam autem eaque expedita
+                            dolores aliquam, provident aspernatur deleniti ut!
+                            Ipsum aliquam veritatis quidem magni tenetur ipsam
+                            libero. Ex voluptatem ducimus et quo necessitatibus
+                            veniam laudantium eum est? Exercitationem at earum
+                            minus corrupti dolor ipsum expedita aperiam
+                            assumenda nihil tempore velit magnam enim cupiditate
+                            molestias, facilis fugit nobis et mollitia id
+                            similique voluptatum? Eaque obcaecati velit quidem
+                            iste voluptate quam quas consequatur cupiditate
+                            asperiores culpa. Quidem, ipsam amet maxime
+                            explicabo dolorum quibusdam, repudiandae eveniet
+                            soluta quisquam eius ut, officiis eum impedit nulla.
+                            Blanditiis!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Landhaus Ehrengrund -->
+        <div
+            class="modal fade"
+            id="landhausModal"
+            tabindex="-1"
+            aria-labelledby="landhausModal"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content bg-dark text-light">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Landhaus Ehrengrund
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            src="img/landhausEhrengrund.png"
+                            class="w-100 rounded mb-3"
+                        />
+                        <h4>Verwendete Technologien:</h4>
+                        <ul>
+                            <li>Wordpress + Plugins</li>
+                            <li>Affinity Designer</li>
+                        </ul>
+                        <h4>Beschreibung:</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. In consectetur molestias temporibus tempora
+                            cumque quas veniam nam magnam autem eaque expedita
+                            dolores aliquam, provident aspernatur deleniti ut!
+                            Ipsum aliquam veritatis quidem magni tenetur ipsam
+                            libero. Ex voluptatem ducimus et quo necessitatibus
+                            veniam laudantium eum est? Exercitationem at earum
+                            minus corrupti dolor ipsum expedita aperiam
+                            assumenda nihil tempore velit magnam enim cupiditate
+                            molestias, facilis fugit nobis et mollitia id
+                            similique voluptatum? Eaque obcaecati velit quidem
+                            iste voluptate quam quas consequatur cupiditate
+                            asperiores culpa. Quidem, ipsam amet maxime
+                            explicabo dolorum quibusdam, repudiandae eveniet
+                            soluta quisquam eius ut, officiis eum impedit nulla.
+                            Blanditiis!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- You-Hotels -->
+        <div
+            class="modal fade"
+            id="youHotelsModal"
+            tabindex="-1"
+            aria-labelledby="youHotelsModal"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content bg-dark text-light">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            You-Hotels
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            src="img/youHotels.png"
+                            class="w-100 rounded mb-3"
+                        />
+                        <h4>Verwendete Technologien:</h4>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                        <h4>Beschreibung:</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. In consectetur molestias temporibus tempora
+                            cumque quas veniam nam magnam autem eaque expedita
+                            dolores aliquam, provident aspernatur deleniti ut!
+                            Ipsum aliquam veritatis quidem magni tenetur ipsam
+                            libero. Ex voluptatem ducimus et quo necessitatibus
+                            veniam laudantium eum est? Exercitationem at earum
+                            minus corrupti dolor ipsum expedita aperiam
+                            assumenda nihil tempore velit magnam enim cupiditate
+                            molestias, facilis fugit nobis et mollitia id
+                            similique voluptatum? Eaque obcaecati velit quidem
+                            iste voluptate quam quas consequatur cupiditate
+                            asperiores culpa. Quidem, ipsam amet maxime
+                            explicabo dolorum quibusdam, repudiandae eveniet
+                            soluta quisquam eius ut, officiis eum impedit nulla.
+                            Blanditiis!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- placeholder -->
+        <div
+            class="modal fade"
+            id="placeholderModal"
+            tabindex="-1"
+            aria-labelledby="placeholderModal"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content bg-dark text-light">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Placeholder
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. In consectetur molestias temporibus tempora cumque
+                        quas veniam nam magnam autem eaque expedita dolores
+                        aliquam, provident aspernatur deleniti ut! Ipsum aliquam
+                        veritatis quidem magni tenetur ipsam libero. Ex
+                        voluptatem ducimus et quo necessitatibus veniam
+                        laudantium eum est? Exercitationem at earum minus
+                        corrupti dolor ipsum expedita aperiam assumenda nihil
+                        tempore velit magnam enim cupiditate molestias, facilis
+                        fugit nobis et mollitia id similique voluptatum? Eaque
+                        obcaecati velit quidem iste voluptate quam quas
+                        consequatur cupiditate asperiores culpa. Quidem, ipsam
+                        amet maxime explicabo dolorum quibusdam, repudiandae
+                        eveniet soluta quisquam eius ut, officiis eum impedit
+                        nulla. Blanditiis!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Impressum -->
+        <div
+            class="modal fade"
+            id="impressumModal"
+            tabindex="-1"
+            aria-labelledby="impressumModal"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content bg-dark text-light">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Impressum
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. In consectetur molestias temporibus tempora cumque
+                        quas veniam nam magnam autem eaque expedita dolores
+                        aliquam, provident aspernatur deleniti ut! Ipsum aliquam
+                        veritatis quidem magni tenetur ipsam libero. Ex
+                        voluptatem ducimus et quo necessitatibus veniam
+                        laudantium eum est? Exercitationem at earum minus
+                        corrupti dolor ipsum expedita aperiam assumenda nihil
+                        tempore velit magnam enim cupiditate molestias, facilis
+                        fugit nobis et mollitia id similique voluptatum? Eaque
+                        obcaecati velit quidem iste voluptate quam quas
+                        consequatur cupiditate asperiores culpa. Quidem, ipsam
+                        amet maxime explicabo dolorum quibusdam, repudiandae
+                        eveniet soluta quisquam eius ut, officiis eum impedit
+                        nulla. Blanditiis!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Datenschutz -->
+        <div
+            class="modal fade"
+            id="privacyModal"
+            tabindex="-1"
+            aria-labelledby="privacyModal"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content bg-dark text-light">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Datenschutz
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. In consectetur molestias temporibus tempora cumque
+                        quas veniam nam magnam autem eaque expedita dolores
+                        aliquam, provident aspernatur deleniti ut! Ipsum aliquam
+                        veritatis quidem magni tenetur ipsam libero. Ex
+                        voluptatem ducimus et quo necessitatibus veniam
+                        laudantium eum est? Exercitationem at earum minus
+                        corrupti dolor ipsum expedita aperiam assumenda nihil
+                        tempore velit magnam enim cupiditate molestias, facilis
+                        fugit nobis et mollitia id similique voluptatum? Eaque
+                        obcaecati velit quidem iste voluptate quam quas
+                        consequatur cupiditate asperiores culpa. Quidem, ipsam
+                        amet maxime explicabo dolorum quibusdam, repudiandae
+                        eveniet soluta quisquam eius ut, officiis eum impedit
+                        nulla. Blanditiis!
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Footer -->
         <footer class="p-5 bg-dark text-white">
             <div class="container">
@@ -656,10 +969,16 @@
                     <div class="col d-flex flex-column">
                         <a
                             href="#"
-                            class="text-primary text-decoration-none pb-2"
+                            data-bs-toggle="modal"
+                            data-bs-target="#impressumModal"
+                            class="link-primary text-decoration-none pb-2"
                             >IMPRESSUM</a
                         >
-                        <a href="#" class="text-primary text-decoration-none"
+                        <a
+                            href="#"
+                            data-bs-toggle="modal"
+                            data-bs-target="#privacyModal"
+                            class="link-primary text-decoration-none"
                             >DATENSCHUTZ</a
                         >
                     </div>
