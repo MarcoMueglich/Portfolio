@@ -47,12 +47,6 @@ $dark: rgb(27, 27, 27);
     }
 }
 
-#footer {
-    a:hover {
-        color: $light;
-    }
-}
-
 // Media Queries
 @include media-breakpoint-up(md) {
     #showcase {
