@@ -47,6 +47,14 @@ $dark: rgb(27, 27, 27);
     }
 }
 
+.modal a {
+    max-width: 200px;
+}
+
+.overflowXHidden {
+    overflow-x: hidden;
+}
+
 // Media Queries
 @include media-breakpoint-up(md) {
     #showcase {
@@ -68,5 +76,9 @@ $dark: rgb(27, 27, 27);
         left: 0;
         background: $light;
         transform: skewY(-0.7deg);
+    }
+
+    .overflowXHidden {
+        overflow-x: visible;
     }
 }
