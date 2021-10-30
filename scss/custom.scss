@@ -2,6 +2,7 @@
 @font-face {
     font-family: Montserrat;
     src: url(../fonts/Montserrat-Regular.ttf);
+    font-display: swap;
 }
 
 // Colors
@@ -77,7 +78,9 @@ $dark: rgb(27, 27, 27);
         background: $light;
         transform: skewY(-0.7deg);
     }
+}
 
+@include media-breakpoint-up(xl) {
     .overflowXHidden {
         overflow-x: visible;
     }
