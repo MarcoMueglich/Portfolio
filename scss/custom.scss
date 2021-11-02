@@ -56,6 +56,16 @@ $dark: rgb(27, 27, 27);
     overflow-x: hidden;
 }
 
+.socialMediaIcon {
+    width: 70px;
+    filter: invert(45%);
+    transition: filter 0.5s;
+}
+
+.socialMediaIcon:hover {
+    filter: invert(100%);
+}
+
 // Media Queries
 @include media-breakpoint-up(md) {
     #showcase {
